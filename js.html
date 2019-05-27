@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Hello</title>
+    </head>
+
+    <body>
+        <div class="online">
+        <h1 class="header">Hello Javascript</h1>
+        <p id="date"></p>
+        <p id="date1"></p>
+        <p id="date2"></p>
+        <p id="date3"></p>
+        <p id="demo"></p>
+        </div>
+        <div class="notOnline">
+            <header>
+                <h1>Oops!!!</h1>
+                <h2>Seems like you are not online</h2>
+            </header>
+        </div>
+
+
+
+
+        <script>
+
+if(navigator.online){ document.getElementByClassName('online').style.display = "block"; }
+else { document.getElementByClassName('online').style.display="none";
+        document.getElementByClassName('notOnline').style.display="block";
+      }
+
+          console.log('HELLO');
+          a=14;
+          if(a>8){ console.log('yes');}
+          else{console.log('no');}
+
+          let array=[1,2,3,4,5,6,7,8,9,10];
+          for(let i of array)
+          { console.log(array[i]);}
+
+          function hello(a)
+          { if(a==9){console.log('you did it');}
+        else{console.log('you did not');}}
+        hello();
+
+        var ob={ name:'YATHARTH', age:18};
+        console.log(ob.name);
+        console.log(ob.age);
+
+
+    var d=new Date('2019-09-09');
+   
+    document.getElementById('date1').innerHTML=d.toDateString();
+    document.getElementById('date2').innerHTML=d.toDateString();
+
+    console.log(d);
+
+    var w = screen.width;
+    document.getElementById('date3').innerHTML= " Screen width " + w ;
+    var h=screen.height;
+    document.getElementById('date').innerHTML = " screen height " + h ;
+        
+     var d = window.location.href;
+     document.getElementById('demo').innerHTML = " Screen href " + d ;
+
+     var f= window.location.hostname;
+     document.getElementById('demo').innerHTML = " window's host " + " hello " ; 
+    var sc = document.getElementById('demo').innerText;
+       document.getElementById('demo').innerHTML = " window's host hello " + sc;
+
+
+     function clicks()
+     {
+         window.location.assign("https://www.youtube.com");
+     }  
+        
+        
+     var df = navigator.appName;
+
+     function clicks1()
+     {
+         document.getElementById('demo').innerHTML = "window's kill " + df ;
+     }   
+        
+        </script>
+
+        <button onclick = clicks1(); >Click me</button>
+
+    
+
+
+    </body>
+</html>
