@@ -1,0 +1,2 @@
+# jsYATHARTH
+practice for javascript
